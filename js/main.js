@@ -2,7 +2,6 @@ var latitude;
 var longitude;
 function getPos(pos) {
     var coords = pos.coords;
-    alert(pos.coords.latitude + " " + pos.coords.longitude);
     latitude = coords.latitude;
     longitude = coords.longitude;
 }
