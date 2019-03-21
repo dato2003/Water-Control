@@ -1,19 +1,22 @@
-function getLocation() {
-    var x = document.getElementById("x");
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(getPos);
-    } else {
-      x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
 var latitude;
 var longitude;
 function getPos(pos) {
-    var coords = pos.cords;
+    var coords = pos.coords;
     latitude = coords.latitude;
     longitude = coords.longitude;
     alert(latitude);
     alert(longitude);
+}
+function error(err) {
+    alert(err.code + ":" + err.message);
+}
+function getLocation() {
+    var x = document.getElementById("x");
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(getPos,error,{enableHighAccuracy=true});
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
 }
 function initMap() {
     var latlon = {lat : latitude , lng : longitude};
