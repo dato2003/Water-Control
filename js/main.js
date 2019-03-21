@@ -16,6 +16,9 @@ function getPos(pos) {
 }
 function initMap() {
     var latlon = {lat : latitude , lng : longitude};
-    var map = new google.maps.Map(document.getElementById("map"),{zoom : 4,center:latlon});
+    alert(latlon);
+    alert(latitude);
+    alert(longitude);
+    var map = new google.maps.Map(document.getElementById("map"),{zoom : 4,center: latlon});
 
 }
