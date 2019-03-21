@@ -9,6 +9,7 @@ function getLocation() {
 var position;
 function getPos(pos) {
     position = pos;
+    alert(position);
 }
 function initMap() {
     var latlon = {lat : position.coords.latitude , lng : position.coords.longitude};
