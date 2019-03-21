@@ -6,13 +6,16 @@ function getLocation() {
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
-var position;
+var latitude;
+var longitude;
 function getPos(pos) {
-    position = pos;
-    alert(position);
+    var coords = pos.coords;
+    latitude = coords.latitude;
+    longitude = coords.longitude;
+
 }
 function initMap() {
-    var latlon = {lat : position.coords.latitude , lng : position.coords.longitude};
+    var latlon = {lat : latitude , lng : longitude};
     var map = new google.maps.Map(document.getElementById("map"),{zoom : 4,center:latlon});
 
 }
