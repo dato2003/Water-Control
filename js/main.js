@@ -9,7 +9,7 @@ function getLocation() {
 var latitude;
 var longitude;
 function getPos(pos) {
-    var coords = pos.coords;
+    var coords = pos.cords;
     latitude = coords.latitude;
     longitude = coords.longitude;
     alert(latitude);
