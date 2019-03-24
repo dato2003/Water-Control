@@ -37,12 +37,5 @@ function initMap() {
         alert("Geolocation is not supported by this browser.");
     }
 
-    if(latlon != null)
-    {
-        var map = new google.maps.Map(document.getElementById("map"),{zoom : 14,center: getLatLon()});
-        alert("here");
-    }else
-    {
-        alert("Lat and Long are Null");
-    }
+    var map = new google.maps.Map(document.getElementById("map"),{zoom : 14,center: getLatLon()});
 }
