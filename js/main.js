@@ -25,6 +25,10 @@ async function getPos(pos) {
     
 }
 
+function getLatLon() {
+    return latlon;
+}
+
 function initMap() {
     
     if (navigator.geolocation) {
@@ -35,7 +39,7 @@ function initMap() {
 
     if(latlon != null)
     {
-        var map = new google.maps.Map(document.getElementById("map"),{zoom : 14,center: latlon});
+        var map = new google.maps.Map(document.getElementById("map"),{zoom : 14,center: getLatLon()});
         alert("here");
     }else
     {
