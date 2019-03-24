@@ -1,0 +1,34 @@
+var Rating = null;
+var Amount = null;
+
+function Star1() {
+    rating = 5;
+}
+function Star2() {
+    rating = 4;
+}
+function Star3() {
+    rating = 3;
+}
+function Star4() {
+    rating = 2;
+}
+function Star5() {
+    rating = 1;
+}
+
+function Star11() {
+    Amount = 5;
+}
+function Star22() {
+    Amount = 4;
+}
+function Star33() {
+    Amount = 3;
+}
+function Star44() {
+    Amount = 2;
+}
+function Star55() {
+    Amount = 1;
+}

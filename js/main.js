@@ -11,8 +11,13 @@ function error(err) {
 function getLocation() {
     var x = document.getElementById("x");
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(getPos,error);
+        navigator.geolocation.getCurrentPosition(getPos,error);
     } else {
-      x.innerHTML = "Geolocation is not supported by this browser.";
+        x.innerHTML = "Geolocation is not supported by this browser.";
     }
+}
+
+function initMap() {
+    var latlon = {lat: latitude , lng: longitude};
+    var map = new google.maps.Map(document.getElementById("mapgit "),{zoom : 14,center: latlon});
 }
