@@ -1,3 +1,7 @@
+function error(err) {
+    alert(err.code + ":" + err.message);
+}
+
 function initMap() {
     
     var latitude;
@@ -8,21 +12,11 @@ function initMap() {
         latitude = coords.latitude;
         longitude = coords.longitude;
     }
-    
-    function error(err) {
-        alert(err.code + ":" + err.message);
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(getPos,error);
+    } else {
+        alert("Geolocation is not supported by this browser.");
     }
-    
-    function getLocation() {
-        var x = document.getElementById("x");
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(getPos,error);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-    }
-
-    getLocation();
 
     var latlon = {lat: latitude , lng: longitude};
     var map = new google.maps.Map(document.getElementById("map"),{zoom : 14,center: latlon});
