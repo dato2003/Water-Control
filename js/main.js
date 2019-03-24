@@ -1,15 +1,28 @@
-var latitude;
-var longitude;
+var latlon;
     
 function error(err) {
     alert(err.code + ":" + err.message);
 }
 
-function getPos(pos) {
-    var coords = pos.coords;
-    latitude = coords.latitude;
-    longitude = coords.longitude;
-    alert(latitude + " " + longitude);
+async function getPos(pos) {
+    
+    var promise = new promise((resolve,reject) => {
+        var coords = pos.coords;
+        latitude = coords.latitude;
+        longitude = coords.longitude;
+
+        if(latitude != null && longitude != null)
+        {
+            resolve({lat: latitude , lng: longitude});
+        }
+    });
+
+    latlon = await promise;
+    
+    
+
+    //alert(latitude + " " + longitude);
+    
 }
 
 function initMap() {
