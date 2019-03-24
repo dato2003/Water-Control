@@ -33,9 +33,8 @@ function initMap() {
         alert("Geolocation is not supported by this browser.");
     }
 
-    if(latitude != null && longitude != null)
+    if(latlon != null)
     {
-        var latlon = {lat: latitude , lng: longitude};
         var map = new google.maps.Map(document.getElementById("map"),{zoom : 14,center: latlon});
         alert("here");
     }else
