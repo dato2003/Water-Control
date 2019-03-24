@@ -28,6 +28,5 @@ function initMap() {
     }else
     {
         alert("Lat and Long are Null");
-        initMap();
     }
 }
