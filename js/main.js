@@ -12,7 +12,7 @@ function getPos(pos) {
     longitude = coords.longitude;
 
 
-    alert(latitude + " " + longitude); 
+    //alert(latitude + " " + longitude); 
 }
 
 function initMap() {
