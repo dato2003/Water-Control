@@ -9,6 +9,7 @@ function getPos(pos) {
     var coords = pos.coords;
     latitude = coords.latitude;
     longitude = coords.longitude;
+    alert(latitude + " " + longitude);
 }
 
 function initMap() {
