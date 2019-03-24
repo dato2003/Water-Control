@@ -19,5 +19,5 @@ function getLocation() {
 
 function initMap() {
     var latlon = {lat: latitude , lng: longitude};
-    var map = new google.maps.Map(document.getElementById("mapgit "),{zoom : 14,center: latlon});
+    var map = new google.maps.Map(document.getElementById("map"),{zoom : 14,center: latlon});
 }
