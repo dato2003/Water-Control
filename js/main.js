@@ -24,6 +24,7 @@ function initMap() {
     {
         var latlon = {lat: latitude , lng: longitude};
         var map = new google.maps.Map(document.getElementById("map"),{zoom : 14,center: latlon});
+        alert("here");
     }else
     {
         alert("Lat and Long are Null");
