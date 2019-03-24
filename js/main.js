@@ -18,7 +18,7 @@ async function getPos(pos) {
     });
 
     latlon = await promise;
-    
+    alert(latlon);
     
 
     //alert(latitude + " " + longitude);
