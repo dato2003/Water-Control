@@ -6,7 +6,7 @@ function error(err) {
 
 async function getPos(pos) {
     
-    var promise = new promise((resolve,reject) => {
+    var promise = new Promise((resolve,reject) => {
         var coords = pos.coords;
         latitude = coords.latitude;
         longitude = coords.longitude;
