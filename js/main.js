@@ -6,6 +6,12 @@ function error(err) {
     alert(err.code + ":" + err.message);
 }
 
+function getPos(pos) {
+    var coords = pos.coords;
+    latitude = coords.latitude;
+    longitude = coords.longitude;
+}
+
 function initMap() {
     
     if (navigator.geolocation) {
