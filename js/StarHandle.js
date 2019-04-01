@@ -32,3 +32,26 @@ function Star44() {
 function Star55() {
     Amount = 1;
 }
+function Submit(){
+    if(rating == null || Amount == null)
+    {
+        alert("Select Quality and Quantity");
+    }else
+    {
+        var data = "Quantity=" + Amount +  
+        "&Quality=" + rating + "&Lat=" + latitude+ "&Lng=" + longitude;
+        
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                if(xhttp.responseText == "1")
+                {
+                    alert("Thanks for Contributing to Our Research");
+                }
+            }
+        };
+        xhttp.open("POST", "https://randomthought.000webhostapp.com/php/DBInteraction.php", true);
+        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhttp.send(data);
+    }
+}
