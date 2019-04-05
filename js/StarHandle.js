@@ -33,6 +33,7 @@ function Star55() {
     Amount = 1;
 }
 function Submit(){
+    alert(rating + " " + Amount);
     if(rating == null || Amount == null)
     {
         alert("Select Quality and Quantity");
