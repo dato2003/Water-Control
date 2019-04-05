@@ -44,10 +44,7 @@ function Submit(){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (xhttp.readyState == 4 && xhttp.status == 200) {
-                if(xhttp.responseText == "1")
-                {
-                    alert("Thanks for Contributing to Our Research");
-                }
+                alert(xhttp.response + " " + xhttp.responseText);
             }
         };
         xhttp.open("POST", "https://randomthought.000webhostapp.com/php/DBInteraction.php", true);
