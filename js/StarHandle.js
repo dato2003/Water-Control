@@ -33,13 +33,11 @@ function Star55() {
     Amount = 1;
 }
 function Submit(){
-    alert(rating + " " + Amount);
     if(rating == null || Amount == null)
     {
         alert("Select Quality and Quantity");
     }else
     {
-        alert("Submitted");
         var data = "Quantity=" + Amount +  
         "&Quality=" + rating + "&Lat=" + latitude+ "&Lng=" + longitude;
         
@@ -53,7 +51,6 @@ function Submit(){
                 alert(xhttp.responseText);
             }
             alert(xhttp.readyState+" "+xhttp.status);
-            alert("Submitted");
         };
         xhttp.open("POST", "https://randomthought.000webhostapp.com/php/DBInteraction.php", true);
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
