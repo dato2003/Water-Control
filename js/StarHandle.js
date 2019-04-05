@@ -1,4 +1,4 @@
-var Rating = null;
+var rating = null;
 var Amount = null;
 
 function Star1() {
