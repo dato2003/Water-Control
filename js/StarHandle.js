@@ -48,9 +48,7 @@ function Submit(){
                 {
                     alert("Thanks for Contributing to Our Research");
                 }
-                alert(xhttp.responseText);
             }
-            alert(xhttp.readyState+" "+xhttp.status);
         };
         xhttp.open("POST", "https://randomthought.000webhostapp.com/php/DBInteraction.php", true);
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
