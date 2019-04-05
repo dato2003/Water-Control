@@ -49,6 +49,7 @@ function Submit(){
                 {
                     alert("Thanks for Contributing to Our Research");
                 }
+                alert(xhttp.responseText);
             }
         };
         xhttp.open("POST", "https://randomthought.000webhostapp.com/php/DBInteraction.php", true);
