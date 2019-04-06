@@ -43,6 +43,8 @@ function Submit(){
         
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
+            alert(xhttp.readyState);
+            alert(xhttp.status);
             if (xhttp.readyState == 4 && xhttp.status == 200) {
                 alert(xhttp.response + " " + xhttp.responseText);
             }
