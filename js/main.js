@@ -28,8 +28,7 @@ function initMap() {
             },2000);
         }else
         {
-            alert("please Enable Geolocation");
-            window.location.reload();
+            alert("please Enable Geolocation and refresh");
         }
     });
 }
