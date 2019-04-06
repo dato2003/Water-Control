@@ -49,6 +49,7 @@ function Submit(){
         };
         xhttp.open("POST", "https://randomthought.000webhostapp.com/php/DBInteraction.php", true);
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhttp.setRequestHeader("Access-Control-Allow-Origin","*");
         xhttp.send(data);
         alert("Thanks for submittion");
     }
