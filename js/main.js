@@ -20,6 +20,7 @@ function initMap() {
         alert("Geolocation is not supported by this browser.");
     }
     navigator.permissions.querry({name:'geolocation'}).then(function(result){
+        alert("hey");
         if(result.state == "granted")
         {
             setTimeout(function(){
