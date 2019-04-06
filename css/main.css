@@ -74,13 +74,11 @@ h2{
     direction: rtl;
     display: inline-block;
     padding: 26px;
-    position: absolute;
     left: 32%;
 }
 
 .star-rating input[type=radio] {
     display: none;
-    margin-left: 12%;
 }
 
 .star-rating label {
