@@ -29,6 +29,8 @@ function initMap() {
         }else
         {
             alert("please Enable Geolocation and refresh");
+            var Map = document.getElementById("map");
+            Map.innerHTML = "<h2>Enable Geolocation To Access Map</h2>";
         }
     });
 }

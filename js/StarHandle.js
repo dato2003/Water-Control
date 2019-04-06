@@ -33,9 +33,9 @@ function Star55() {
     Amount = 1;
 }
 function Submit(){
-    if(rating == null || Amount == null)
+    if(rating == null || Amount == null || latitude == null || longitude == null)
     {
-        alert("Select Quality and Quantity");
+        alert("Select Quality and Quantity and Check if Location is allowed");
     }else
     {
         var data = "Quantity=" + Amount +  
