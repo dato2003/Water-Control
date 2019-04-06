@@ -19,8 +19,16 @@ function initMap() {
     } else {
         alert("Geolocation is not supported by this browser.");
     }
-    setTimeout(function(){
-        var latlon = {lat: latitude, lng:longitude};
-        var map = new google.maps.Map(document.getElementById("map"),{zoom : 14, center: latlon});
-    },2000);
+    navigator.permissions.querry({name:'geolocation'}).then(function(result){
+        if(result.state == "granted")
+        {
+            setTimeout(function(){
+                var latlon = {lat: latitude, lng:longitude};
+                var map = new google.maps.Map(document.getElementById("map"),{zoom : 14, center: latlon});
+            },2000);
+        }else
+        {
+            alert("please Enable Geolocation");
+        }
+    });
 }
