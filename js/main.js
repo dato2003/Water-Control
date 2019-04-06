@@ -19,7 +19,7 @@ function initMap() {
     } else {
         alert("Geolocation is not supported by this browser.");
     }
-    navigator.permissions.querry({name:'geolocation'}).then(function(result){
+    navigator.permissions.query({name:'geolocation'}).then(function(result){
         alert("hey");
         if(result.state == "granted")
         {
