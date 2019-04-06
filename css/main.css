@@ -6,11 +6,12 @@ h1{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1000%;
+    margin-top: 0%;
 }
 h2{
     color: aqua;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 300%;
+    font-size: 500%;
     text-align: center;
 }
 #map{
@@ -88,7 +89,7 @@ h2{
     cursor: pointer;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    font-size: 400%;
+    font-size: 600%;
 }
 
 .star-rating label:hover,
