@@ -4,12 +4,12 @@ body{
 h1{
     color: aqua;
     text-align: center;
-    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1000%;
 }
 h2{
     color: aqua;
-    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
     text-align: center;
 }
